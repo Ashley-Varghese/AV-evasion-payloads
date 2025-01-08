@@ -1,0 +1,9 @@
+[package]
+name = "encryptor"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+base64 = "0.22.1"
+libaes = "0.7.0"
+xor_cryptor = "1.2.3"
