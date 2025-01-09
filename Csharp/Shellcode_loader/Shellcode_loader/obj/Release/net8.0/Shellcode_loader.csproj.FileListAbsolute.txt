@@ -1,0 +1,14 @@
+C:\Users\ashle\source\repos\Shellcode_loader\Shellcode_loader\bin\Release\net8.0\Shellcode_loader.exe
+C:\Users\ashle\source\repos\Shellcode_loader\Shellcode_loader\bin\Release\net8.0\Shellcode_loader.deps.json
+C:\Users\ashle\source\repos\Shellcode_loader\Shellcode_loader\bin\Release\net8.0\Shellcode_loader.runtimeconfig.json
+C:\Users\ashle\source\repos\Shellcode_loader\Shellcode_loader\bin\Release\net8.0\Shellcode_loader.dll
+C:\Users\ashle\source\repos\Shellcode_loader\Shellcode_loader\bin\Release\net8.0\Shellcode_loader.pdb
+C:\Users\ashle\source\repos\Shellcode_loader\Shellcode_loader\obj\Release\net8.0\Shellcode_loader.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ashle\source\repos\Shellcode_loader\Shellcode_loader\obj\Release\net8.0\Shellcode_loader.AssemblyInfoInputs.cache
+C:\Users\ashle\source\repos\Shellcode_loader\Shellcode_loader\obj\Release\net8.0\Shellcode_loader.AssemblyInfo.cs
+C:\Users\ashle\source\repos\Shellcode_loader\Shellcode_loader\obj\Release\net8.0\Shellcode_loader.csproj.CoreCompileInputs.cache
+C:\Users\ashle\source\repos\Shellcode_loader\Shellcode_loader\obj\Release\net8.0\Shellcode_loader.dll
+C:\Users\ashle\source\repos\Shellcode_loader\Shellcode_loader\obj\Release\net8.0\refint\Shellcode_loader.dll
+C:\Users\ashle\source\repos\Shellcode_loader\Shellcode_loader\obj\Release\net8.0\Shellcode_loader.pdb
+C:\Users\ashle\source\repos\Shellcode_loader\Shellcode_loader\obj\Release\net8.0\Shellcode_loader.genruntimeconfig.cache
+C:\Users\ashle\source\repos\Shellcode_loader\Shellcode_loader\obj\Release\net8.0\ref\Shellcode_loader.dll
