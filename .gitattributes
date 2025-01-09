@@ -1,1 +1,3 @@
 *.exe linguist-vendored
+Rust/payloads/target/** linguist-vendored
+Rust/encryptor/target/** linguist-vendored
