@@ -10,7 +10,10 @@ The shellcode used, unless specified otherwise , is always an msfvenom reverse s
 
 ## Rust payloads
 1. Shellcode runner with AES256 encryption and base64 encoding of shellcode: 
-A basic shellcode loader in rust, with encryption mad encoding used. The shellcode is directly inserted into the code, after being separately encrypted by an encryptor program (also included). 
+A basic shellcode loader in rust, with encryption and encoding used. The shellcode is injected into a chosen application after creating a new process and suspending it.  The shellcode is directly inserted into the code, after being separately encrypted by an encryptor program (also included). 
+The original program was modified to remove extra string output , which was triggering defender. The process to be used was changed to the Edge browser , since that is common on windows systems and is  less suspicious than notepad, calc or explorer (these three are the most commonly used in PoCs. Also,  heuristic based detection should catch the fact that these three are making weird connections over the network, when they don't need to).
+
+Another important thing to do is to compile it as a  release instead of using the debug setting. The --release flag should be added to cargo while running. 
 
 ## C-sharp payloads
 1. Basic Shellcode runner :  
@@ -18,5 +21,11 @@ The basic shellcode runner in C-sharp is ridiculously simple, and is somehow sti
 The code simply allocates memory for the shellcode array, loads the shellcode into the newly created memory and then creates a new thread for it. 
 
 2. Shellcode stager that obtains remote shellcode and runs it :
-This is an advanced version of the previous loader, that will first obtain the base64 encoded shellcode from a remote server and then run it. 
+This is an advanced version of the previous loader, that will first obtain the base64 encoded shellcode from a remote server and then run it. AES 256 encryption was also added (WIP )
+
+
+## Nim payloads 
+1. Nim encrypted shellcode loader: 
+Original code was taken from [this amazing repo on offensive Nim code](https://github.com/S3cur3Th1sSh1t/Creds/blob/master/nim/encrypted_shellcode_loader.nim)
+ As with the basic rust payload, the encryptor program is included , and will output the AES256 encrypted shellcode in base64 encoding. This is directly put into the loader's code. Again compiling as release and using msedge.exe as the process to be injected into is essential, as notepad is too suspicious. Unnecessary string output was removed. 
 
