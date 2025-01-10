@@ -29,6 +29,3 @@ Original code was taken from [this amazing repo on offensive Nim code](https://g
  As with the basic rust payload, the encryptor program is included , and will output the AES256 encrypted shellcode in base64 encoding. This is directly put into the loader's code. Again compiling as release and using msedge.exe as the process to be injected into is essential, as notepad is too suspicious. Unnecessary string output was removed. 
 
 
-
-![image](https://github.com/user-attachments/assets/27b85a4d-4c44-4029-a43e-bf6767655186)
-
