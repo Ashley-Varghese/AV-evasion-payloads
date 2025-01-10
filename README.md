@@ -23,9 +23,12 @@ The code simply allocates memory for the shellcode array, loads the shellcode in
 2. Shellcode stager that obtains remote shellcode and runs it :
 This is an advanced version of the previous loader, that will first obtain the base64 encoded shellcode from a remote server and then run it. AES 256 encryption was also added (WIP )
 
-
 ## Nim payloads 
 1. Nim encrypted shellcode loader: 
 Original code was taken from [this amazing repo on offensive Nim code](https://github.com/S3cur3Th1sSh1t/Creds/blob/master/nim/encrypted_shellcode_loader.nim)
  As with the basic rust payload, the encryptor program is included , and will output the AES256 encrypted shellcode in base64 encoding. This is directly put into the loader's code. Again compiling as release and using msedge.exe as the process to be injected into is essential, as notepad is too suspicious. Unnecessary string output was removed. 
+
+
+
+![image](https://github.com/user-attachments/assets/27b85a4d-4c44-4029-a43e-bf6767655186)
 
