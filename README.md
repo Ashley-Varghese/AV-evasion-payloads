@@ -8,6 +8,10 @@ The payloads are categorized by language, and separated into the respective lang
 
 The shellcode used, unless specified otherwise , is always an msfvenom reverse shell payload pointing to localhost, at port 4322. I  used a nc.exe listener to catch the reverse shells , to prove that it worked. 
 
+## Rust payloads
+1. Shellcode runner with AES256 encryption and base64 encoding of shellcode: 
+A basic shellcode loader in rust, with encryption mad encoding used. The shellcode is directly inserted into the code, after being separately encrypted by an encryptor program (also included). 
+
 ## C-sharp payloads
 1. Basic Shellcode runner :  
 The basic shellcode runner in C-sharp is ridiculously simple, and is somehow still undetectable by Defender. A more advanced version of this is shown in the next example. The code is taken from [this repo](https://gist.github.com/matterpreter/03e2bd3cf8b26d57044f3b494e73bbea). I have included it just to show that even this will work against Defender currently, as of early 2025. maybe given a few more months , this signature will be picked up by vendors.
@@ -15,3 +19,4 @@ The code simply allocates memory for the shellcode array, loads the shellcode in
 
 2. Shellcode stager that obtains remote shellcode and runs it :
 This is an advanced version of the previous loader, that will first obtain the base64 encoded shellcode from a remote server and then run it. 
+
