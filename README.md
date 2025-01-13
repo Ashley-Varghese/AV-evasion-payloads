@@ -23,7 +23,7 @@ The basic shellcode runner in C-sharp is ridiculously simple, and is somehow sti
 The code simply allocates memory for the shellcode array, loads the shellcode into the newly created memory and then creates a new thread for it. 
 
 2. Shellcode stager that obtains remote shellcode and runs it :
-This is an advanced and heavily modified version of the previous loader, that will first obtain the base64 encoded shellcode from a remote server and then run it. AES 256 encryption was also added. Some code snippiets for the cnryption were taken from [this repo](https://github.com/Tw1sm/SharpInjector/blob/master/ScEncryptor/Program.cs). The AES- 256 encryptor program is also included for this particular stager's shellcode. 
+This is an advanced and heavily modified version of the previous loader, that will first obtain the base64 encoded shellcode from a remote server and then run it. AES 256 encryption was also added. Some code snippets for the encryption were taken from [this repo](https://github.com/Tw1sm/SharpInjector/blob/master/ScEncryptor/Program.cs). The AES- 256 encryptor program is also included for this particular stager's shellcode. 
 
 ## Nim payloads 
 1. Nim encrypted shellcode loader: 
