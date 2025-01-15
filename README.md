@@ -22,8 +22,9 @@ Another important thing to do is to compile it as a  release instead of using th
 The basic shellcode runner in C-sharp is ridiculously simple, and is somehow still undetectable by Defender. A more advanced version of this is shown in the next example. The code is taken from [this repo](https://gist.github.com/matterpreter/03e2bd3cf8b26d57044f3b494e73bbea). I have included it just to show that even this will work against Defender currently, as of early 2025. Maybe if given a few more months , this signature will be picked up by vendors.
 The code simply allocates memory for the shellcode array, loads the shellcode into the newly created memory and then creates a new thread for it. 
 
-2. Shellcode stager that obtains remote shellcode and runs it :
-This is an advanced and heavily modified version of the previous loader, that will first obtain the base64 encoded shellcode from a remote server and then run it. AES 256 encryption was also added. Some code snippets for the encryption were taken from [this repo](https://github.com/Tw1sm/SharpInjector/blob/master/ScEncryptor/Program.cs). The AES- 256 encryptor program is also included for this particular stager's shellcode. 
+2. AES 256 Shellcode stager that downloads remote shellcode and runs it :
+This is an advanced and heavily modified version of the previous loader, that will first obtain the base64 encoded  and encrypted shellcode from a remote server and then run it. AES 256 encryption was also added. Some code snippets for the encryption were taken from [this repo](https://github.com/Tw1sm/SharpInjector/blob/master/ScEncryptor/Program.cs). The AES- 256 encryptor program is also included for this particular stager's shellcode.
+One more key change that I made in this version is to make sure the command prompt window does not pop up on running the payload, which would be quite suspicious. This was done by changing the output type  to be a windows application, in the properties in Visual Studio 2022. I hosted the shellcode file called sc.txt on a server on localhost and and ran the nc.exe listener as usual. 
 
 ## Nim payloads 
 1. Nim encrypted shellcode loader: 
