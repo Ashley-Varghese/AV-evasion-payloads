@@ -69,6 +69,4 @@ fn main() {
             0x0,
             std::ptr::null_mut())
     };
-
-    println!("{}", "[+] Shellcode loaded!");
 }
