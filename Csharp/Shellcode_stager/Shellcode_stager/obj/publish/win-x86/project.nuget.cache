@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "rMc/CJGd7vw=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ashle\\source\\repos\\Shellcode_stager\\Shellcode_stager\\Shellcode_stager.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ashle\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.11\\microsoft.net.illink.tasks.8.0.11.nupkg.sha512"
+  ],
+  "logs": []
+}

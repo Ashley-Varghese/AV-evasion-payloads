@@ -1,0 +1,2 @@
+C:\Users\ashle\source\repos\Shellcode_stager\Shellcode_stager\bin\Release\publish\Shellcode_stager.pdb
+C:\Users\ashle\source\repos\Shellcode_stager\Shellcode_stager\bin\Release\publish\Shellcode_stager.exe

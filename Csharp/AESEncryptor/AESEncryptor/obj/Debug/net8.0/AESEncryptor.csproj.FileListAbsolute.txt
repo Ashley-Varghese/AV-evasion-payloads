@@ -1,0 +1,14 @@
+C:\Users\ashle\source\repos\AESEncryptor\AESEncryptor\obj\Debug\net8.0\AESEncryptor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ashle\source\repos\AESEncryptor\AESEncryptor\obj\Debug\net8.0\AESEncryptor.AssemblyInfoInputs.cache
+C:\Users\ashle\source\repos\AESEncryptor\AESEncryptor\obj\Debug\net8.0\AESEncryptor.AssemblyInfo.cs
+C:\Users\ashle\source\repos\AESEncryptor\AESEncryptor\obj\Debug\net8.0\AESEncryptor.csproj.CoreCompileInputs.cache
+C:\Users\ashle\source\repos\AESEncryptor\AESEncryptor\bin\Debug\net8.0\AESEncryptor.exe
+C:\Users\ashle\source\repos\AESEncryptor\AESEncryptor\bin\Debug\net8.0\AESEncryptor.deps.json
+C:\Users\ashle\source\repos\AESEncryptor\AESEncryptor\bin\Debug\net8.0\AESEncryptor.runtimeconfig.json
+C:\Users\ashle\source\repos\AESEncryptor\AESEncryptor\bin\Debug\net8.0\AESEncryptor.dll
+C:\Users\ashle\source\repos\AESEncryptor\AESEncryptor\bin\Debug\net8.0\AESEncryptor.pdb
+C:\Users\ashle\source\repos\AESEncryptor\AESEncryptor\obj\Debug\net8.0\AESEncryptor.dll
+C:\Users\ashle\source\repos\AESEncryptor\AESEncryptor\obj\Debug\net8.0\refint\AESEncryptor.dll
+C:\Users\ashle\source\repos\AESEncryptor\AESEncryptor\obj\Debug\net8.0\AESEncryptor.pdb
+C:\Users\ashle\source\repos\AESEncryptor\AESEncryptor\obj\Debug\net8.0\AESEncryptor.genruntimeconfig.cache
+C:\Users\ashle\source\repos\AESEncryptor\AESEncryptor\obj\Debug\net8.0\ref\AESEncryptor.dll

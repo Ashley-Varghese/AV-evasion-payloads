@@ -1,0 +1,89 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ashle\\source\\repos\\Shellcode_stager\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8018204F-256A-44AC-B177-9F6C4D354A8E}|Shellcode_stager\\Shellcode_stager.csproj|c:\\users\\ashle\\source\\repos\\shellcode_stager\\shellcode_stager\\shellcode_stager.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{8018204F-256A-44AC-B177-9F6C4D354A8E}|Shellcode_stager\\Shellcode_stager.csproj|solutionrelative:shellcode_stager\\shellcode_stager.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ashle\\source\\repos\\Csharp-revshell\\Csharp-revshell\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ashle\\source\\repos\\Shellcode_loader\\Shellcode_loader\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8018204F-256A-44AC-B177-9F6C4D354A8E}|Shellcode_stager\\Shellcode_stager.csproj|c:\\users\\ashle\\source\\repos\\shellcode_stager\\shellcode_stager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8018204F-256A-44AC-B177-9F6C4D354A8E}|Shellcode_stager\\Shellcode_stager.csproj|solutionrelative:shellcode_stager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Shellcode_stager",
+              "DocumentMoniker": "C:\\Users\\ashle\\source\\repos\\Shellcode_stager\\Shellcode_stager\\Shellcode_stager.csproj",
+              "RelativeDocumentMoniker": "Shellcode_stager\\Shellcode_stager.csproj",
+              "ToolTip": "C:\\Users\\ashle\\source\\repos\\Shellcode_stager\\Shellcode_stager\\Shellcode_stager.csproj",
+              "RelativeToolTip": "Shellcode_stager\\Shellcode_stager.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-15T11:14:34.911Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ashle\\source\\repos\\Csharp-revshell\\Csharp-revshell\\Program.cs",
+              "RelativeDocumentMoniker": "..\\Csharp-revshell\\Csharp-revshell\\Program.cs",
+              "ToolTip": "C:\\Users\\ashle\\source\\repos\\Csharp-revshell\\Csharp-revshell\\Program.cs",
+              "RelativeToolTip": "..\\Csharp-revshell\\Csharp-revshell\\Program.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAACwAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T08:12:18.217Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ashle\\source\\repos\\Shellcode_loader\\Shellcode_loader\\Program.cs",
+              "RelativeDocumentMoniker": "..\\Shellcode_loader\\Shellcode_loader\\Program.cs",
+              "ToolTip": "C:\\Users\\ashle\\source\\repos\\Shellcode_loader\\Shellcode_loader\\Program.cs",
+              "RelativeToolTip": "..\\Shellcode_loader\\Shellcode_loader\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T08:11:53.505Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ashle\\source\\repos\\Shellcode_stager\\Shellcode_stager\\Program.cs",
+              "RelativeDocumentMoniker": "Shellcode_stager\\Program.cs",
+              "ToolTip": "C:\\Users\\ashle\\source\\repos\\Shellcode_stager\\Shellcode_stager\\Program.cs",
+              "RelativeToolTip": "Shellcode_stager\\Program.cs",
+              "ViewState": "AgIAAHAAAAAAAAAAAAAwwEYAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T14:26:38.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

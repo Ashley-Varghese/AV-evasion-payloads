@@ -1,0 +1,14 @@
+C:\Users\ashle\source\repos\Shellcode_stager\Shellcode_stager\bin\Release\net8.0\Shellcode_stager.exe
+C:\Users\ashle\source\repos\Shellcode_stager\Shellcode_stager\bin\Release\net8.0\Shellcode_stager.deps.json
+C:\Users\ashle\source\repos\Shellcode_stager\Shellcode_stager\bin\Release\net8.0\Shellcode_stager.runtimeconfig.json
+C:\Users\ashle\source\repos\Shellcode_stager\Shellcode_stager\bin\Release\net8.0\Shellcode_stager.dll
+C:\Users\ashle\source\repos\Shellcode_stager\Shellcode_stager\bin\Release\net8.0\Shellcode_stager.pdb
+C:\Users\ashle\source\repos\Shellcode_stager\Shellcode_stager\obj\Release\net8.0\Shellcode_stager.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ashle\source\repos\Shellcode_stager\Shellcode_stager\obj\Release\net8.0\Shellcode_stager.AssemblyInfoInputs.cache
+C:\Users\ashle\source\repos\Shellcode_stager\Shellcode_stager\obj\Release\net8.0\Shellcode_stager.AssemblyInfo.cs
+C:\Users\ashle\source\repos\Shellcode_stager\Shellcode_stager\obj\Release\net8.0\Shellcode_stager.csproj.CoreCompileInputs.cache
+C:\Users\ashle\source\repos\Shellcode_stager\Shellcode_stager\obj\Release\net8.0\Shellcode_stager.dll
+C:\Users\ashle\source\repos\Shellcode_stager\Shellcode_stager\obj\Release\net8.0\refint\Shellcode_stager.dll
+C:\Users\ashle\source\repos\Shellcode_stager\Shellcode_stager\obj\Release\net8.0\Shellcode_stager.pdb
+C:\Users\ashle\source\repos\Shellcode_stager\Shellcode_stager\obj\Release\net8.0\Shellcode_stager.genruntimeconfig.cache
+C:\Users\ashle\source\repos\Shellcode_stager\Shellcode_stager\obj\Release\net8.0\ref\Shellcode_stager.dll
