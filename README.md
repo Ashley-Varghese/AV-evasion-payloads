@@ -1,5 +1,5 @@
 # AV-evasion-payloads
-This is an evaluation of payloads to run shellcode while evading anti-virus solutions. It is primarily focused around Windows Defender evasion, but I will try to include other scan results later (At the moment, sites like antiscan.me do not work, making it difficult to test against other vendors).
+This is an evaluation of payloads to run shellcode while evading anti-virus solutions. It is primarily focused around Windows Defender evasion, but I will try to include other scan results later. I will be using kleenscan.com for most scans, as antiscan.me seems to be having issues with payments. 
 The steps that I took to make a payload  undetectable are listed in the various payload sections below. 
 
 The focus is to see how effective each of these techniques remain in the current security  landscape, given that nothing used in this repo is a particularly new technique. Most of the code in this repo was taken from PoCs written by other people, and modified until it was undetectable to windows Defender. Multiple languages were also used , to see how effective their binaries are at evading detection with the same techniques. For these tests , cloud protection was kept on and sample submission turned off. At the moment , since this is limited to AV solutions, I will not be doing much code obfuscation or EDR evasion, and so these payloads are not OPSEC-safe and probably wont bypass EDR or manual inspection/debugging by an experienced security analyst. 
@@ -13,7 +13,10 @@ The shellcode used, unless specified otherwise , is always an msfvenom reverse s
 1. Shellcode runner with AES256 encryption and base64 encoding of shellcode: 
 A basic shellcode loader in rust, with encryption and encoding used. The shellcode is injected into a chosen application after creating a new process and suspending it.  The shellcode is directly inserted into the code, after being separately encrypted by an encryptor program (also included). 
 The original program was modified to remove extra string output , which was triggering defender. The process to be used was changed to the Edge browser , since that is common on windows systems and is  less suspicious than notepad, calc or explorer (these three are the most commonly used in PoCs. Also,  heuristic based detection should catch the fact that these three are making weird connections over the network, when they don't need to).
-Another important thing to do is to compile it as a  release instead of using the debug setting. The --release flag should be added to cargo while running. 
+Another important thing to do is to compile it as a  release instead of using the debug setting. The --release flag should be added to cargo while running.
+Detection reults :
+![image](https://github.com/user-attachments/assets/73c4685d-8b5a-446c-ae55-f999959abb18)
+
 
 
 
