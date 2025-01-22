@@ -15,6 +15,7 @@ A basic shellcode loader in rust, with encryption and encoding used. The shellco
 The original program was modified to remove extra string output , which was triggering defender. The process to be used was changed to the Edge browser , since that is common on windows systems and is  less suspicious than notepad, calc or explorer (these three are the most commonly used in PoCs. Also,  heuristic based detection should catch the fact that these three are making weird connections over the network, when they don't need to).
 Another important thing to do is to compile it as a  release instead of using the debug setting. The --release flag should be added to cargo while running.
 Detection reults :
+
 ![image](https://github.com/user-attachments/assets/73c4685d-8b5a-446c-ae55-f999959abb18)
 
 
