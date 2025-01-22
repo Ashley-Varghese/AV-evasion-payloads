@@ -1,5 +1,9 @@
 # AV-evasion-payloads
 This is an evaluation of payloads to run shellcode while evading anti-virus solutions. It is primarily focused around Windows Defender evasion, but I will try to include other scan results later. I will be using kleenscan.com for most scans, as antiscan.me seems to be having issues with payments. 
+The main targets to be achieved with every single payload are as follows: 
+1. It should be undetectable by Windows Defender.
+2. It should have an overall detection rate of 5/40 or less (as judged by Kleenscan.com ) .
+
 The steps that I took to make a payload  undetectable are listed in the various payload sections below. 
 
 The focus is to see how effective each of these techniques remain in the current security  landscape, given that nothing used in this repo is a particularly new technique. Most of the code in this repo was taken from PoCs written by other people, and modified until it was undetectable to windows Defender. Multiple languages were also used , to see how effective their binaries are at evading detection with the same techniques. For these tests , cloud protection was kept on and sample submission turned off. At the moment , since this is limited to AV solutions, I will not be doing much code obfuscation or EDR evasion, and so these payloads are not OPSEC-safe and probably wont bypass EDR or manual inspection/debugging by an experienced security analyst. 
