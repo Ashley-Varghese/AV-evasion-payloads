@@ -23,23 +23,41 @@ Detection results :
 ![image](https://github.com/user-attachments/assets/73c4685d-8b5a-446c-ae55-f999959abb18)
 
 
-2. 
+2. **Bolus shellcode  stager that downloads a Rustic64shell  shellcode:**
+This is a basic dropper, using no encryption , and only base64 encoding. The bolus crate in rust was used, specifically made for loading shellcode , and the main code wass taken from [here](https://github.com/mttaggart/rustyneedle). What's really interesting about this is the shellcode used, as I tested this dropper with the  [Rustic64shell project](https://github.com/safedv/Rustic64Shell/tree/main). I wanted to move away from msfvenom as a shellcode generator, since most vendors have already got signatures for all their paylaods. After some searching,  I discovered the Rustic64 project (linked below) for rust implants, and the corresponding  reverse shell implant code made by the same author shown  , that can be built into shellcode. The primary advantage of this is that even with only basic encoding  ( or even no encoding at all, as I have tried) , the project works fine and escapes detection at least by  Win defender. In fact even the raw shellcode file is not caught by Defender as of 24th Jan, 2025. 
+Detection results  are shown below .Keep in mind that this is just the  Bolus dropper, without any shellcode, and it seems to be relatively undetected by  AV, considering that bolus was written for exactly this kind of application - 
+
+![image](https://github.com/user-attachments/assets/b2f48898-997e-4bbf-9ff7-e3001573f7a0)
+
 
 
 
 ## C-sharp payloads
 1. **Basic Shellcode runner :**
 The basic shellcode runner in C-sharp is ridiculously simple, and is somehow still undetectable by Defender. A more advanced version of this is shown in the next example. The code is taken from [this repo](https://gist.github.com/matterpreter/03e2bd3cf8b26d57044f3b494e73bbea). I have included it just to show that even this will work against Defender currently, as of early 2025. Maybe if given a few more months , this signature will be picked up by vendors.
-The code simply allocates memory for the shellcode array, loads the shellcode into the newly created memory and then creates a new thread for it. 
+The code simply allocates memory for the shellcode array, loads the shellcode into the newly created memory and then creates a new thread for it.
+Detection results - 
+![image](https://github.com/user-attachments/assets/aefc2971-16fa-442f-96e3-e98bbc458e10)
 
-2. **AES 256 Shellcode stager that downloads remote shellcode and runs it :**
+As you can see , the detection results are not so good. It can be further improved upon, with some encryption , as shown in the next few payloads. 
+
+
+3. **AES 256 Shellcode stager that downloads remote shellcode and runs it :**
 This is an advanced and heavily modified version of the previous loader, that will first obtain the base64 encoded  and encrypted shellcode from a remote server and then run it. AES 256 encryption was also added. Some code  for the encryption were taken from [this repo](https://github.com/Tw1sm/SharpInjector/blob/master/ScEncryptor/Program.cs). The AES- 256 encryptor program is also included for this particular stager's shellcode.
-One more key change that I made in this version is to make sure the command prompt window does not pop up on running the payload, which would be quite suspicious. This was done by changing the output type  to be a windows application, in the properties in Visual Studio 2022. I hosted the shellcode file called sc.txt on a server on localhost and and ran the nc.exe listener as usual. 
+One more key change that I made in this version is to make sure the command prompt window does not pop up on running the payload, which would be quite suspicious. This was done by changing the output type  to be a windows application, in the properties in Visual Studio 2022. I hosted the shellcode file called sc.txt on a server on localhost and and ran the nc.exe listener as usual.
+Detection results - 
+![image](https://github.com/user-attachments/assets/dcebadcf-4c41-4fb9-bc2a-b6b18ef87f71)
+
+The basic dropper is absolutely undetectable. Again , I should point out that this is with the shellcode server not operational , so perhaps the results would change when that is downloaded and the AV engines have  taken that  into account. It successfully bypasses  Defender, locally . 
 
 ## Nim payloads 
 1. **Nim encrypted shellcode loader:**
 Original code was taken from [this amazing repo on offensive Nim code](https://github.com/S3cur3Th1sSh1t/Creds/blob/master/nim/encrypted_shellcode_loader.nim) .
  As with the basic rust payload, the encryptor program is included , and will output the AES256 encrypted shellcode in base64 encoding. This is directly put into the loader's code. Again compiling as release and using msedge.exe as the process to be injected into is essential, as notepad is too suspicious. Unnecessary string output was removed.
+
+Detection results-
+![image](https://github.com/user-attachments/assets/5da480aa-0a31-44e8-b05e-bf0857cc2397)
+ 
 
 ### TODO
 1. Add more Nim payloads ( I am a noob at Nim, so it will take time to learn more)
