@@ -36,11 +36,10 @@ Detection results  are shown below .Keep in mind that this is just the  Bolus dr
 1. **Basic Shellcode runner :**
 The basic shellcode runner in C-sharp is ridiculously simple, and is somehow still undetectable by Defender. A more advanced version of this is shown in the next example. The code is taken from [this repo](https://gist.github.com/matterpreter/03e2bd3cf8b26d57044f3b494e73bbea). I have included it just to show that even this will work against Defender currently, as of early 2025. Maybe if given a few more months , this signature will be picked up by vendors.
 The code simply allocates memory for the shellcode array, loads the shellcode into the newly created memory and then creates a new thread for it.
+The detection results are not so good. It can be further improved upon, with some encryption , as shown in the next few payloads. 
 Detection results - 
 
 ![image](https://github.com/user-attachments/assets/aefc2971-16fa-442f-96e3-e98bbc458e10)
-
-As you can see , the detection results are not so good. It can be further improved upon, with some encryption , as shown in the next few payloads. 
 
 
 3. **AES 256 Shellcode stager that downloads remote shellcode and runs it :**
