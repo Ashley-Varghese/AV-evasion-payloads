@@ -30,6 +30,11 @@ Detection results  are shown below .Keep in mind that this is just the  Bolus dr
 ![image](https://github.com/user-attachments/assets/b2f48898-997e-4bbf-9ff7-e3001573f7a0)
 
 
+3. **Bolus with base64 embedded Rustic64 shellcode:**
+I decided to experiment some more with the bolus crate. After going through the documentation, I found other loading options that were useful.  I decided to modify the previous stager, and make the shellcode embedded. I used the same shellcode as the previous one,  although this time it was embedded as a double base64 encoded string inside the code. The detection results are great with this one. 
+
+![image](https://github.com/user-attachments/assets/1573e362-78e2-4c61-a2f0-36b4b78c25d8)
+
 
 
 ## C-sharp payloads
