@@ -75,12 +75,13 @@ Detection results-
 This repo was built using the code from many places, and the knowledge and techniques used came from many more  blogs, repos, tutorials written by other people, some of which have been lost in my browser history. I have tried to include all the major ones here for anyone to see the source material. I thank all the contributors of these links for their amazing efforts to spread this knowledge, even those that I missed out in this list here. 
 
 1. [https://github.com/trickster0/OffensiveRust/tree/master](https://github.com/trickster0/OffensiveRust/tree/master)
-2. [https://github.com/trickster0/OffensiveRust/tree/master](https://github.com/trickster0/OffensiveRust/tree/master)
+2. [https://github.com/joaoviictorti/RustRedOps/blob/main/Encryption_Shellcode/src/aes.rs](https://github.com/joaoviictorti/RustRedOps/blob/main/Encryption_Shellcode/src/aes.rs)
 3. [https://github.com/brosck/RustSCLoader/blob/main/src/main.rs](https://github.com/brosck/RustSCLoader/blob/main/src/main.rs)
-4. [https://tryhackme.com/r/room/avevasionshellcode](https://tryhackme.com/r/room/avevasionshellcode)
-5. [https://github.com/byt3bl33d3r/OffensiveNim/blob/master/src/shellcode_bin.nim](https://github.com/byt3bl33d3r/OffensiveNim/blob/master/src/shellcode_bin.nim)
-6. [https://github.com/safedv/Rustic64](https://github.com/safedv/Rustic64)
-7. [https://github.com/mvelazc0/defcon27_csharp_workshop/blob/master/Labs/lab3/1.cs](https://github.com/mvelazc0/defcon27_csharp_workshop/blob/master/Labs/lab3/1.cs)
-8. [https://www.ired.team/offensive-security/code-injection-process-injection/injecting-and-executing-.net-assemblies-to-unmanaged-process](https://www.ired.team/offensive-security/code-injection-process-injection/injecting-and-executing-.net-assemblies-to-unmanaged-process)
-9. [https://fgsec.net/posts/Injecting-dotNet-Assemblies-To-Unmanaged-Processes/](https://fgsec.net/posts/Injecting-dotNet-Assemblies-To-Unmanaged-Processes/)
+4. [https://docs.rs/bolus/0.3.0/bolus/](https://docs.rs/bolus/0.3.0/bolus/)
+5. [https://tryhackme.com/r/room/avevasionshellcode](https://tryhackme.com/r/room/avevasionshellcode)
+6. [https://github.com/byt3bl33d3r/OffensiveNim/blob/master/src/shellcode_bin.nim](https://github.com/byt3bl33d3r/OffensiveNim/blob/master/src/shellcode_bin.nim)
+7. [https://github.com/safedv/Rustic64](https://github.com/safedv/Rustic64)
+8. [https://github.com/mvelazc0/defcon27_csharp_workshop/blob/master/Labs/lab3/1.cs](https://github.com/mvelazc0/defcon27_csharp_workshop/blob/master/Labs/lab3/1.cs)
+9. [https://www.ired.team/offensive-security/code-injection-process-injection/injecting-and-executing-.net-assemblies-to-unmanaged-process](https://www.ired.team/offensive-security/code-injection-process-injection/injecting-and-executing-.net-assemblies-to-unmanaged-process)
+10. [https://fgsec.net/posts/Injecting-dotNet-Assemblies-To-Unmanaged-Processes/](https://fgsec.net/posts/Injecting-dotNet-Assemblies-To-Unmanaged-Processes/)
 
