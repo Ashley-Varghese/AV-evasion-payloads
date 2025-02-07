@@ -84,4 +84,5 @@ This repo was built using the code from many places, and the knowledge and techn
 8. [https://github.com/mvelazc0/defcon27_csharp_workshop/blob/master/Labs/lab3/1.cs](https://github.com/mvelazc0/defcon27_csharp_workshop/blob/master/Labs/lab3/1.cs)
 9. [https://www.ired.team/offensive-security/code-injection-process-injection/injecting-and-executing-.net-assemblies-to-unmanaged-process](https://www.ired.team/offensive-security/code-injection-process-injection/injecting-and-executing-.net-assemblies-to-unmanaged-process)
 10. [https://fgsec.net/posts/Injecting-dotNet-Assemblies-To-Unmanaged-Processes/](https://fgsec.net/posts/Injecting-dotNet-Assemblies-To-Unmanaged-Processes/)
+11. [https://ppn.snovvcrash.rocks/red-team/maldev/pic-shellcode](https://ppn.snovvcrash.rocks/red-team/maldev/pic-shellcode)
 
