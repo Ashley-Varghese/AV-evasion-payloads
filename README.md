@@ -47,7 +47,7 @@ The code simply allocates memory for the shellcode array, loads the shellcode in
 The detection results are not so good. It can be further improved upon, with some encryption , as shown in the next few payloads. 
 Detection results - 
 
-![image](https://github.com/user-attachments/assets/aefc2971-16fa-442f-96e3-e98bbc458e10)
+   ![image](https://github.com/user-attachments/assets/aefc2971-16fa-442f-96e3-e98bbc458e10)
 
 
 3. **AES 256 Shellcode stager that downloads remote shellcode and runs it :**
@@ -55,7 +55,7 @@ This is an advanced and heavily modified version of the previous loader, that wi
 One more key change that I made in this version is to make sure the command prompt window does not pop up on running the payload, which would be quite suspicious. This was done by changing the output type  to be a windows application, in the properties in Visual Studio 2022. I hosted the shellcode file called sc.txt on a server on localhost and and ran the nc.exe listener as usual.
 Detection results - 
 
-![image](https://github.com/user-attachments/assets/dcebadcf-4c41-4fb9-bc2a-b6b18ef87f71)
+   ![image](https://github.com/user-attachments/assets/dcebadcf-4c41-4fb9-bc2a-b6b18ef87f71)
 
 The basic dropper is absolutely undetectable. Again , I should point out that this is with the shellcode server not operational , so perhaps the results would change when that is downloaded and the AV engines have  taken that  into account. It successfully bypasses  Defender, locally . 
 
@@ -66,7 +66,7 @@ Original code was taken from [this amazing repo on offensive Nim code](https://g
 
 Detection results-
 
-![image](https://github.com/user-attachments/assets/5da480aa-0a31-44e8-b05e-bf0857cc2397)
+  ![image](https://github.com/user-attachments/assets/5da480aa-0a31-44e8-b05e-bf0857cc2397)
  
 
 ### TODO
