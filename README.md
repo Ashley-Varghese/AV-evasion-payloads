@@ -20,20 +20,20 @@ The original program was modified to remove extra string output , which was trig
 Another important thing to do is to compile it as a  release instead of using the debug setting. The --release flag should be added to cargo while running.
 Detection results :
 
-![image](https://github.com/user-attachments/assets/73c4685d-8b5a-446c-ae55-f999959abb18)
+      ![image](https://github.com/user-attachments/assets/73c4685d-8b5a-446c-ae55-f999959abb18)
 
 
 2. **Bolus shellcode  stager that downloads a Rustic64shell  shellcode:**
 This is a basic dropper, using no encryption , and only base64 encoding. The bolus crate in rust was used, specifically made for loading shellcode , and the main code wass taken from [here](https://github.com/mttaggart/rustyneedle). This comprises of a stager, where shellcode is downloaded in base64-encoded format and decoded, and then executed in memory. What's really interesting about this is the shellcode used, as I tested this dropper with the  [Rustic64shell project](https://github.com/safedv/Rustic64Shell/tree/main). I wanted to move away from msfvenom as a shellcode generator, since most vendors have already got signatures for most msfvenom payloads. After some searching,  I discovered the Rustic64 project (linked below) for rust implants, and the corresponding  reverse shell implant code made by the same author, shown in the previous link, that can be built into shellcode. The primary advantage of this is that even with only basic encoding  ( or even no encoding at all, as I have tried) , the project works fine and escapes detection at least by  Win defender. In fact even the raw shellcode file is not caught by Defender as of 24th Jan, 2025. 
 Detection results  are shown below .Keep in mind that this is just the  Bolus dropper, without any shellcode, and it seems to be relatively undetected by  AV, considering that bolus was written specifically for loading shellcode - 
 
-![image](https://github.com/user-attachments/assets/b2f48898-997e-4bbf-9ff7-e3001573f7a0)
+      ![image](https://github.com/user-attachments/assets/b2f48898-997e-4bbf-9ff7-e3001573f7a0)
 
 
 3. **Bolus with base64 embedded Rustic64 shellcode:**
 I decided to experiment some more with the bolus crate. After going through the documentation, I found other loading options that were useful.  I decided to modify the previous stager, and make the shellcode embedded. I used the same shellcode as the previous one,  although this time it was embedded as a double base64 encoded string inside the code. The detection results are great with this one. 
 
-![image](https://github.com/user-attachments/assets/1573e362-78e2-4c61-a2f0-36b4b78c25d8)
+      ![image](https://github.com/user-attachments/assets/1573e362-78e2-4c61-a2f0-36b4b78c25d8)
 
 4. **Fibre shellcode execution with litcrypt to encrypt shellcode:**
 Further building on the concepts used in the previous paylaods, this one uses a fiber rather than a thread to load shellcode, as used in [this repo](https://github.com/b1nhack/rust-shellcode/tree/main/create_fiber) . This is much stealthier than creating new threads, and may evade more EDRs. The shellcode used was actually the Rustic64Shell payload that has been used in the payloads above. I also used the litcrypt crate,  to  encrypt the base64 string literal used in the loader, which unfortunately results in some very messy code. However, as of now I can't find any way around it, has the litcrypt crate only works on string literals or slices, and can't be used in variables. It gets the job done, and the base64 string is now encrypted, and cannot be read with basic static analysis. The litcrypt crate only decrypts the string when it needs to be used. 
