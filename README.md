@@ -37,7 +37,7 @@ I decided to experiment some more with the bolus crate. After going through the 
 
 4. **Fibre shellcode execution with litcrypt to encrypt shellcode:**
 Further building on the concepts used in the previous paylaods, this one uses a fiber rather than a thread to load shellcode, as used in [this repo](https://github.com/b1nhack/rust-shellcode/tree/main/create_fiber) . This is much stealthier than creating new threads, and may evade some EDRs. The shellcode used was actually the Rustic64Shell payload that has been used in the payloads above. I also used the litcrypt crate, to  encrypt the base64 string literal used in the loader, which unfortunately results in some very messy code. However, as of now I can't find any way around it, has the litcrypt crate only works on string literals or slices, and can't be used in variables. It gets the job done, and the base64 string cannot be read with basic static analysis. The litcrypt crate only decrypts the string when it needs to be used. <br>
-Detection results- 
+Detection results- <br>
 As of this update, no AV engines were able to detect this, including the two EDR solutions (Crowdstrike falcon and 1 other) used by kleenscan. However , I must point out that it seemed to me that some AVs were not running correctly, so I have not included the screenshot yet. Hoping that kleenscan.com resolves the problem soon. It was able to bypass Windows Defender and several other popular AV solutions, so it looks like a really good payload. 
 
 ## C-sharp payloads
